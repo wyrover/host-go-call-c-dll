@@ -1,10 +1,3 @@
-# host-go-call-c-dll
-
-go 程序作为宿主加载 C++ DLL 双向通信。
-
-
-
-```go
 package main
 
 /*
@@ -97,4 +90,3 @@ func in_go_callback(a *C.char, b *C.char) C.int {
     fmt.Println(C.GoString(b))
     return 0
 }
-```
